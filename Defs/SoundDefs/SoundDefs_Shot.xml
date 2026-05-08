@@ -45,6 +45,48 @@
     </SoundDef>
 
     <SoundDef>
+        <defName>ORBE_shot_46x30mm</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Shooting/ORBE_shot_46x30mm</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>46</min>
+                    <max>52</max>
+                </volumeRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>ORBE_shot_suppressed_46x30mm</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Shooting/ORBE_shot_suppressed_46x30mm</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>46</min>
+                    <max>52</max>
+                </volumeRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
         <defName>ORBE_shot_57x28mm</defName>
         <context>MapOnly</context>
         <eventNames/>
@@ -85,7 +127,6 @@
             </li>
         </subSounds>
     </SoundDef>
-
 
     <SoundDef>
         <defName>ORBE_shot_556x45mm</defName>

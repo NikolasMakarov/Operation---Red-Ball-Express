@@ -353,7 +353,7 @@
 			<AccuracyShort>0.80</AccuracyShort>
 			<AccuracyMedium>0.35</AccuracyMedium>
 			<AccuracyLong>0.15</AccuracyLong>
-			<RangedWeapon_Cooldown>0.70</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.80</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
 			<Steel>50</Steel>
@@ -366,7 +366,7 @@
 				<defaultProjectile>Bullet_ORBE_45ACP</defaultProjectile>
 				<warmupTime>0.3</warmupTime>
 				<range>22.9</range>
-				<burstShotCount>5</burstShotCount>
+				<burstShotCount>4</burstShotCount>
 				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
 				<soundCast>ORBE_shot_45ACP</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
@@ -425,10 +425,10 @@
 			<WorkToMake>12000</WorkToMake>
 			<Mass>2.5</Mass>
 			<AccuracyTouch>0.90</AccuracyTouch>
-			<AccuracyShort>0.84</AccuracyShort>
+			<AccuracyShort>0.78</AccuracyShort>
 			<AccuracyMedium>0.42</AccuracyMedium>
 			<AccuracyLong>0.15</AccuracyLong>
-			<RangedWeapon_Cooldown>0.70</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.80</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
 			<Steel>60</Steel>
@@ -441,9 +441,234 @@
 				<defaultProjectile>Bullet_ORBE_45ACP</defaultProjectile>
 				<warmupTime>0.3</warmupTime>
 				<range>22.9</range>
-				<burstShotCount>5</burstShotCount>
+				<burstShotCount>4</burstShotCount>
 				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
 				<soundCast>ORBE_shot_suppressed_45ACP</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>AssaultRifle</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+				<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+				<li>Blunt</li>
+				<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>ORBE_MP7</defName>
+		<label>MP7</label>
+		<description>The Heckler and Koch MP7 (German: Maschinenpistole 7) is a personal defense weapon chambered for the HK 4.6x30mm armor-piercing cartridge designed by German defence manufacturer Heckler and Koch.</description>
+		<graphicData>
+			<texPath>Things/Weapons/MP7/MP7/ORBE_MP7_tan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.2,1.2)</drawSize>
+		</graphicData>
+		<soundInteract>Interact_SMG</soundInteract>
+		<weaponClasses>
+			<li>RangedLight</li>
+			<li>ShortShots</li>
+		</weaponClasses>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>32000</WorkToMake>
+			<Mass>2.5</Mass>
+			<AccuracyTouch>0.80</AccuracyTouch>
+			<AccuracyShort>0.84</AccuracyShort>
+			<AccuracyMedium>0.52</AccuracyMedium>
+			<AccuracyLong>0.15</AccuracyLong>
+			<RangedWeapon_Cooldown>0.90</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_ORBE_46x30mm</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<range>25.9</range>
+				<burstShotCount>4</burstShotCount>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<soundCast>ORBE_shot_suppressed_46x30mm</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>AssaultRifle</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+				<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+				<li>Blunt</li>
+				<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>ORBE_MP7_Suppressed</defName>
+		<label>MP7 Suppressed</label>
+		<description>The Heckler and Koch MP7 (German: Maschinenpistole 7) is a personal defense weapon chambered for the HK 4.6x30mm armor-piercing cartridge designed by German defence manufacturer Heckler and Koch.</description>
+		<graphicData>
+			<texPath>Things/Weapons/MP7/MP7_Suppressed/ORBE_MP7_Suppressed_tan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.2,1.2)</drawSize>
+		</graphicData>
+		<soundInteract>Interact_SMG</soundInteract>
+		<weaponClasses>
+			<li>RangedLight</li>
+			<li>ShortShots</li>
+		</weaponClasses>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>35000</WorkToMake>
+			<Mass>2.5</Mass>
+			<AccuracyTouch>0.80</AccuracyTouch>
+			<AccuracyShort>0.84</AccuracyShort>
+			<AccuracyMedium>0.52</AccuracyMedium>
+			<AccuracyLong>0.15</AccuracyLong>
+			<RangedWeapon_Cooldown>0.80</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>65</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_ORBE_46x30mm</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<range>25.9</range>
+				<burstShotCount>4</burstShotCount>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<soundCast>ORBE_shot_suppressed_46x30mm</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>AssaultRifle</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+				<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+				<li>Blunt</li>
+				<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>ORBE_MP7_Tactical_tan</defName>
+		<label>MP7 Tactical</label>
+		<description>The Heckler and Koch MP7 (German: Maschinenpistole 7) is a personal defense weapon chambered for the HK 4.6x30mm armor-piercing cartridge designed by German defence manufacturer Heckler and Koch.</description>
+		<graphicData>
+			<texPath>Things/Weapons/MP7/MP7_Tactical/ORBE_MP7_Tactical_tan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.2,1.2)</drawSize>
+		</graphicData>
+		<soundInteract>Interact_SMG</soundInteract>
+		<weaponClasses>
+			<li>RangedLight</li>
+			<li>ShortShots</li>
+		</weaponClasses>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>35000</WorkToMake>
+			<Mass>2.5</Mass>
+			<AccuracyTouch>0.80</AccuracyTouch>
+			<AccuracyShort>0.84</AccuracyShort>
+			<AccuracyMedium>0.52</AccuracyMedium>
+			<AccuracyLong>0.15</AccuracyLong>
+			<RangedWeapon_Cooldown>0.90</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>65</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_ORBE_46x30mm</defaultProjectile>
+				<warmupTime>0.3</warmupTime>
+				<range>25.9</range>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<soundCast>ORBE_shot_suppressed_46x30mm</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
@@ -706,7 +931,7 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<statBases>
-			<WorkToMake>43000</WorkToMake>
+			<WorkToMake>48000</WorkToMake>
 			<Mass>4.0</Mass>
 			<AccuracyTouch>0.75</AccuracyTouch>
 			<AccuracyShort>0.82</AccuracyShort>
@@ -735,9 +960,14 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>IndustrialGunAdvanced</li>
-			<li>AssaultRifle</li>
+			<li>SpacerGun</li>
 		</weaponTags>
+		<tradeTags>
+		<li>WeaponRanged</li>
+		</tradeTags>
+		<weaponClasses>
+		<li>RangedLight</li>
+		</weaponClasses>
 		<tools>
 			<li>
 				<label>stock</label>
@@ -1069,7 +1299,7 @@
 			<AccuracyTouch>0.58</AccuracyTouch>
 			<AccuracyShort>0.63</AccuracyShort>
 			<AccuracyMedium>0.85</AccuracyMedium>
-			<AccuracyLong>0.80</AccuracyLong>
+			<AccuracyLong>0.76</AccuracyLong>
 			<RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
