@@ -17,7 +17,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>Bullet_ORBE_57x28mm</defName>
+		<defName>Bullet_ORBE_46x30mm</defName>
 		<label>5.7x28 mm</label>
 		<graphicData>
 		<texPath>Things/Projectile/Bullet_Small</texPath>
@@ -73,6 +73,21 @@
 		<damageAmountBase>24</damageAmountBase>
 		<armorPenetrationBase>0.35</armorPenetrationBase>
 		<speed>80</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_ORBE_.300_Blackout</defName>
+		<label>.300 Blackout</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+		<damageDef>Bullet</damageDef>
+		<damageAmountBase>20</damageAmountBase>
+		<armorPenetrationBase>0.14</armorPenetrationBase>
+		<speed>75</speed>
 		</projectile>
 	</ThingDef>
 
@@ -530,6 +545,221 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>ORBE_M4A1_USASOC-I</defName>
+		<label>M4A1 USASOC-I</label>
+		<description>The M4 carbine is an assault rifle developed in the United States during the 1980s. It is a shortened version of the M16A2 assault rifle.</description>
+		<graphicData>
+			<texPath>Things/Weapons/M4/M4A1_USASOC-I/ORBE_M4A1_USASOC-I_tan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.2,1.2)</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>43000</WorkToMake>
+			<Mass>3.8</Mass>
+			<AccuracyTouch>0.75</AccuracyTouch>
+			<AccuracyShort>0.78</AccuracyShort>
+			<AccuracyMedium>0.78</AccuracyMedium>
+			<AccuracyLong>0.60</AccuracyLong>
+			<RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>65</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_ORBE_556x45mm</defaultProjectile>
+				<warmupTime>1.0</warmupTime>
+				<range>35.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<soundCast>ORBE_shot_556x45mm</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>AssaultRifle</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+				<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+				<li>Blunt</li>
+				<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>ORBE_M4A1_SOPMOD_II</defName>
+		<label>M4A1 SOPMOD II</label>
+		<description>The M4 carbine is an assault rifle developed in the United States during the 1980s. It is a shortened version of the M16A2 assault rifle.</description>
+		<graphicData>
+			<texPath>Things/Weapons/M4/ORBE_M4A1_SOPMOD_II</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.2,1.2)</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>43000</WorkToMake>
+			<Mass>4.0</Mass>
+			<AccuracyTouch>0.75</AccuracyTouch>
+			<AccuracyShort>0.82</AccuracyShort>
+			<AccuracyMedium>0.82</AccuracyMedium>
+			<AccuracyLong>0.70</AccuracyLong>
+			<RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>65</Steel>
+			<ComponentIndustrial>7</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_ORBE_556x45mm</defaultProjectile>
+				<warmupTime>0.80</warmupTime>
+				<range>38.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<soundCast>ORBE_shot_556x45mm</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>AssaultRifle</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+				<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+				<li>Blunt</li>
+				<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>ORBE_M4AX</defName>
+		<label>M4AX</label>
+		<description>The M4AX is something something bla bla bla, do you guys even read this???</description>
+		<graphicData>
+			<texPath>Things/Weapons/M4/ORBE_M4AX</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.2,1.2)</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>43000</WorkToMake>
+			<Mass>4.0</Mass>
+			<AccuracyTouch>0.75</AccuracyTouch>
+			<AccuracyShort>0.82</AccuracyShort>
+			<AccuracyMedium>0.82</AccuracyMedium>
+			<AccuracyLong>0.70</AccuracyLong>
+			<RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>65</Steel>
+			<Plasteel>55</Plasteel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_ORBE_556x45mmCharged</defaultProjectile>
+				<warmupTime>0.80</warmupTime>
+				<range>38.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<soundCast>Shot_ChargeRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>AssaultRifle</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+				<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+				<li>Blunt</li>
+				<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>ORBE_HK416norm</defName>
 		<label>HK416</label>
 		<description>The HK416 is an assault rifle chambered for the 5.56x45mm NATO cartridge, designed and manufactured by the German company Heckler and Koch.</description>
@@ -550,7 +780,7 @@
 		</thingSetMakerTags>
 		<statBases>
 			<WorkToMake>43000</WorkToMake>
-			<Mass>4.4</Mass>
+			<Mass>3.8</Mass>
 			<AccuracyTouch>0.65</AccuracyTouch>
 			<AccuracyShort>0.75</AccuracyShort>
 			<AccuracyMedium>0.75</AccuracyMedium>
@@ -621,7 +851,7 @@
 		</thingSetMakerTags>
 		<statBases>
 			<WorkToMake>44000</WorkToMake>
-			<Mass>4.8</Mass>
+			<Mass>4.0</Mass>
 			<AccuracyTouch>0.70</AccuracyTouch>
 			<AccuracyShort>0.80</AccuracyShort>
 			<AccuracyMedium>0.80</AccuracyMedium>
@@ -693,7 +923,7 @@
 		</thingSetMakerTags>
 		<statBases>
 			<WorkToMake>44000</WorkToMake>
-			<Mass>4.8</Mass>
+			<Mass>4.0</Mass>
 			<AccuracyTouch>0.70</AccuracyTouch>
 			<AccuracyShort>0.80</AccuracyShort>
 			<AccuracyMedium>0.80</AccuracyMedium>
@@ -834,8 +1064,8 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<statBases>
-			<WorkToMake>43000</WorkToMake>
-			<Mass>3.5</Mass>
+			<WorkToMake>47000</WorkToMake>
+			<Mass>3.8</Mass>
 			<AccuracyTouch>0.58</AccuracyTouch>
 			<AccuracyShort>0.63</AccuracyShort>
 			<AccuracyMedium>0.85</AccuracyMedium>
