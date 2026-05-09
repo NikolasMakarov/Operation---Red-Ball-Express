@@ -77,7 +77,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>Bullet_ORBE_.300_Blackout</defName>
+		<defName>Bullet_ORBE_300_Blackout</defName>
 		<label>.300 Blackout</label>
 		<graphicData>
 		<texPath>Things/Projectile/Bullet_Small</texPath>
@@ -474,7 +474,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>ORBE_MP7</defName>
+		<defName>ORBE_MP7norm</defName>
 		<label>MP7</label>
 		<description>The Heckler and Koch MP7 (German: Maschinenpistole 7) is a personal defense weapon chambered for the HK 4.6x30mm armor-piercing cartridge designed by German defence manufacturer Heckler and Koch.</description>
 		<graphicData>
@@ -1346,7 +1346,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>ORBE_M700</defName>
+		<defName>ORBE_M700norm</defName>
 		<label>M700</label>
 		<description>The Remington Model 700 is part of a series of bolt-action centerfire rifles manufactured by Remington Arms since 1962.</description>
 		<graphicData>
