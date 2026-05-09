@@ -11,7 +11,7 @@
 		<projectile>
 		<damageDef>Bullet</damageDef>
 		<damageAmountBase>15</damageAmountBase>
-		<armorPenetrationBase>0.13</armorPenetrationBase>
+		<armorPenetrationBase>0.12</armorPenetrationBase>
 		<speed>75</speed>
 		</projectile>
 	</ThingDef>
@@ -694,6 +694,77 @@
 				</capacities>
 				<power>9</power>
 				<cooldownTime>1.2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>ORBE_M4A1_Tactical</defName>
+		<label>M4A1 Tactical</label>
+		<description>The M4 carbine is an assault rifle developed in the United States during the 1980s. It is a shortened version of the M16A2 assault rifle.</description>
+		<graphicData>
+			<texPath>Things/Weapons/M4/ORBE_M4A1_Tactical</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.2,1.2)</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>36000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.03</AccuracyTouch>
+			<AccuracyShort>0.08</AccuracyShort>
+			<AccuracyMedium>0.04</AccuracyMedium>
+			<AccuracyLong>0.02</AccuracyLong>
+			<RangedWeapon_Cooldown>3.20</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>50</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_ORBE_556x45mm</defaultProjectile>
+				<warmupTime>1.0</warmupTime>
+				<range>22.9</range>
+				<burstShotCount>30</burstShotCount>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<soundCast>ORBE_shot_556x45mm</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>AssaultRifle</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+				<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+				<li>Blunt</li>
+				<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
 	</ThingDef>
