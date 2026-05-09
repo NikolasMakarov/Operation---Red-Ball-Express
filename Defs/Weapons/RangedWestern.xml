@@ -664,7 +664,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_ORBE_46x30mm</defaultProjectile>
-				<warmupTime>0.3</warmupTime>
+				<warmupTime>0.45</warmupTime>
 				<range>25.9</range>
 				<burstShotCount>5</burstShotCount>
 				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
@@ -1229,7 +1229,7 @@
 			<AccuracyShort>0.75</AccuracyShort>
 			<AccuracyMedium>0.75</AccuracyMedium>
 			<AccuracyLong>0.60</AccuracyLong>
-			<RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.10</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
 			<Steel>65</Steel>
@@ -1312,7 +1312,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_ORBE_556x45mm</defaultProjectile>
 				<warmupTime>0.9</warmupTime>
-				<range>42.9</range>
+				<range>44.9</range>
 				<burstShotCount>3</burstShotCount>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<soundCast>ORBE_shot_556x45mm</soundCast>
@@ -1354,7 +1354,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.2,1.2)</drawSize>
 		</graphicData>
-		<equippedAngleOffset>45</equippedAngleOffset>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
 			<li>LongShots</li>
@@ -1372,10 +1371,10 @@
 		<statBases>
 			<WorkToMake>41000</WorkToMake>
 			<Mass>3.8</Mass>
-			<AccuracyTouch>0.55</AccuracyTouch>
-			<AccuracyShort>0.75</AccuracyShort>
-			<AccuracyMedium>0.90</AccuracyMedium>
-			<AccuracyLong>0.70</AccuracyLong>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
 			<RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
@@ -1390,7 +1389,7 @@
 				<warmupTime>0.70</warmupTime>
 				<range>40.9</range>
 				<burstShotCount>1</burstShotCount>
-				<soundCast>ORBE_shot_suppressed_762x51mm</soundCast>
+				<soundCast>ORBE_shot_762x51mm</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
@@ -1462,7 +1461,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_ORBE_762x51mm</defaultProjectile>
-				<warmupTime>2.0</warmupTime>
+				<warmupTime>1.6</warmupTime>
 				<range>48.9</range>
 				<burstShotCount>1</burstShotCount>
 				<soundCast>ORBE_shot_suppressed_762x51mm</soundCast>
@@ -1537,7 +1536,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_ORBE_762x51mm</defaultProjectile>
-				<warmupTime>3.2</warmupTime>
+				<warmupTime>2.0</warmupTime>
 				<range>50.9</range>
 				<burstShotCount>1</burstShotCount>
 				<soundCast>ORBE_shot_suppressed_762x51mm</soundCast>
