@@ -724,7 +724,7 @@
 			<AccuracyShort>0.75</AccuracyShort>
 			<AccuracyMedium>0.75</AccuracyMedium>
 			<AccuracyLong>0.60</AccuracyLong>
-			<RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.20</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
 			<Steel>60</Steel>
@@ -795,7 +795,7 @@
 			<AccuracyShort>0.78</AccuracyShort>
 			<AccuracyMedium>0.78</AccuracyMedium>
 			<AccuracyLong>0.60</AccuracyLong>
-			<RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.20</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
 			<Steel>65</Steel>
@@ -866,7 +866,7 @@
 			<AccuracyShort>0.82</AccuracyShort>
 			<AccuracyMedium>0.82</AccuracyMedium>
 			<AccuracyLong>0.70</AccuracyLong>
-			<RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.20</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
 			<Steel>65</Steel>
@@ -937,7 +937,7 @@
 			<AccuracyShort>0.82</AccuracyShort>
 			<AccuracyMedium>0.82</AccuracyMedium>
 			<AccuracyLong>0.70</AccuracyLong>
-			<RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.20</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
 			<Steel>65</Steel>
@@ -1015,7 +1015,7 @@
 			<AccuracyShort>0.75</AccuracyShort>
 			<AccuracyMedium>0.75</AccuracyMedium>
 			<AccuracyLong>0.60</AccuracyLong>
-			<RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.20</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
 			<Steel>65</Steel>
@@ -1086,7 +1086,7 @@
 			<AccuracyShort>0.80</AccuracyShort>
 			<AccuracyMedium>0.80</AccuracyMedium>
 			<AccuracyLong>0.65</AccuracyLong>
-			<RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.20</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
 			<Steel>65</Steel>
@@ -1158,7 +1158,7 @@
 			<AccuracyShort>0.80</AccuracyShort>
 			<AccuracyMedium>0.80</AccuracyMedium>
 			<AccuracyLong>0.65</AccuracyLong>
-			<RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.20</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
 			<Steel>65</Steel>
@@ -1229,7 +1229,7 @@
 			<AccuracyShort>0.75</AccuracyShort>
 			<AccuracyMedium>0.75</AccuracyMedium>
 			<AccuracyLong>0.60</AccuracyLong>
-			<RangedWeapon_Cooldown>1.30</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
 			<Steel>65</Steel>
@@ -1300,7 +1300,7 @@
 			<AccuracyShort>0.63</AccuracyShort>
 			<AccuracyMedium>0.85</AccuracyMedium>
 			<AccuracyLong>0.76</AccuracyLong>
-			<RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.30</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
 			<Steel>65</Steel>
@@ -1317,6 +1317,231 @@
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<soundCast>ORBE_shot_556x45mm</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>AssaultRifle</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+				<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+				<li>Blunt</li>
+				<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>ORBE_M700</defName>
+		<label>M700</label>
+		<description>The Remington Model 700 is part of a series of bolt-action centerfire rifles manufactured by Remington Arms since 1962.</description>
+		<graphicData>
+			<texPath>Things/Weapons/ORBE_M700</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.2,1.2)</drawSize>
+		</graphicData>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponClasses>
+			<li>LongShots</li>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>41000</WorkToMake>
+			<Mass>3.8</Mass>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.70</AccuracyLong>
+			<RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_ORBE_762x51mm</defaultProjectile>
+				<warmupTime>0.70</warmupTime>
+				<range>40.9</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>ORBE_shot_suppressed_762x51mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>AssaultRifle</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+				<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+				<li>Blunt</li>
+				<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>ORBE_M700_ARCH</defName>
+		<label>M700 ARCH</label>
+		<description>The Remington Model 700 is part of a series of bolt-action centerfire rifles manufactured by Remington Arms since 1962.</description>
+		<graphicData>
+			<texPath>Things/Weapons/ORBE_M700_ARCH</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.2,1.2)</drawSize>
+		</graphicData>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponClasses>
+			<li>LongShots</li>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>43000</WorkToMake>
+			<Mass>3.8</Mass>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.90</AccuracyLong>
+			<RangedWeapon_Cooldown>1.20</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>7</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_ORBE_762x51mm</defaultProjectile>
+				<warmupTime>2.0</warmupTime>
+				<range>48.9</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>ORBE_shot_suppressed_762x51mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>AssaultRifle</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+				<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+				<li>Blunt</li>
+				<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>ORBE_M700_TAN</defName>
+		<label>M700 TAN</label>
+		<description>The Remington Model 700 is part of a series of bolt-action centerfire rifles manufactured by Remington Arms since 1962.</description>
+		<graphicData>
+			<texPath>Things/Weapons/ORBE_M700_TAN</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.2,1.2)</drawSize>
+		</graphicData>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponClasses>
+			<li>LongShots</li>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>45000</WorkToMake>
+			<Mass>4.2</Mass>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.72</AccuracyShort>
+			<AccuracyMedium>0.94</AccuracyMedium>
+			<AccuracyLong>0.96</AccuracyLong>
+			<RangedWeapon_Cooldown>1.20</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>65</Steel>
+			<ComponentIndustrial>7</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_ORBE_762x51mm</defaultProjectile>
+				<warmupTime>3.2</warmupTime>
+				<range>50.9</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>ORBE_shot_suppressed_762x51mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
